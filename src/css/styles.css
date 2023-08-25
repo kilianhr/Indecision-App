@@ -1,0 +1,105 @@
+html, body {
+    background-color: black;
+}
+.app__container {
+    padding: 10rem;
+    display: grid;
+    grid-template-areas:
+        "question"
+        "response";
+}
+.img-tv {
+    position: absolute;
+    top: 24%;
+    left: 8%;
+    z-index: 2
+}
+.response {
+    position: absolute;
+    top: 22%;
+    right: 20%;
+}
+.img-response {
+    width: 38%;
+    height: 48vh;
+    top: 30%;
+    left: 10%;
+    position: absolute;
+}
+.question__container {
+    grid-area: question;
+}
+.response__container {
+    grid-area: response;
+}
+.globo {
+    border-radius: 25px;
+    padding: 12px;
+    background: lightblue;
+    color: black;
+    padding: 10px;
+    position: relative;
+    width: 342px;
+    margin: 30px;
+    font-family: sans-serif;
+    z-index: 1;
+}
+.globo::after {
+    content: '';
+    position: absolute;
+    background: lightblue;
+    bottom: 0;
+    background: transparent;
+    width: 0px; height: 0px;
+    border-bottom: 40px solid lightblue;
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    z-index: -1;
+}
+.globo-question::after {
+    transform: rotate(320deg);
+    left: 80px;
+}
+.globo-answer::after {
+    transform: rotate(38deg);
+    left: 267px;
+}
+.imagen {
+    width: 141px;
+    border-radius: 50%;
+    border: 8px double #f5e8e8;
+    width: 100px;
+}
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.indecision-container {
+    position: relative;
+    z-index: 99;
+}
+
+input {
+    width: 250px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+}
+input:focus {
+    outline: none;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+h1, h2 {
+    color: white;
+}
+
+h2 {
+    margin-top: 150px;
+}
